@@ -8,7 +8,7 @@ using veracity.DAL.Entities;
 using veracity.DAL.Interfaces;
 namespace veracity.DAL.Repositories
 {
-    class Site_StatisticRepository :IRepository<Site_Statistic> 
+    public class Site_StatisticRepository :IRepository<Site_Statistic> 
     {
         private DataContext db;
         public Site_StatisticRepository(DataContext context)
