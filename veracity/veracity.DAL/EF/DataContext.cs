@@ -10,7 +10,7 @@ namespace veracity.DAL.EF
 {
     public class DataContext : DbContext
     {
-        public DbSet<Employee> Employers { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Entities.Task> Tasks { get; set; }
         public DbSet<Achievement> Achievements { get; set; }
         public DbSet<Site_Statistic> Site_Statistics { get; set; }
