@@ -17,9 +17,9 @@ namespace veracity.DAL.Repositories
         private TaskRepository taskRepository;
         private AchievementRepository achievementRepository;
         private Site_StatisticRepository site_statisticRepository;
-        public EFUnitOfWork(string connectionString)
+        public EFUnitOfWork()
         {
-            db = new DataContext(connectionString);
+            db = new DataContext();
         }
         public IRepository<Employee> Employees
         {
@@ -85,4 +85,3 @@ namespace veracity.DAL.Repositories
         }
     }
 }
-+

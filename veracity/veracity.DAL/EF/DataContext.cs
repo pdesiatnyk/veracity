@@ -15,7 +15,7 @@ namespace veracity.DAL.EF
         public DbSet<Achievement> Achievements { get; set; }
         public DbSet<Site_Statistic> Site_Statistics { get; set; }
 
-        public DataContext(string connectionString): base(connectionString)
+        public DataContext(): base("DbConnection")
         {
 
         }
