@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace veracity.DAL.Entities
 {
-   public class Employee
+   public class Employee: User
     {
         public int ID_employee { get; set; }
         public string Name { get; set; }
