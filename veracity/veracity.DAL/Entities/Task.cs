@@ -14,5 +14,8 @@ namespace veracity.DAL.Entities
         public int ID_employee { get; set; }
         public string Status { get; set; }
         public string Task_descr { get; set; }
+
+ 
+        public Achievement Achievements { get; set; }
     }
 }
