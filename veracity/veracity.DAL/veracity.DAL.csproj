@@ -50,6 +50,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EF\DataContext.cs" />
     <Compile Include="Entities\Achievement.cs" />
+    <Compile Include="Entities\Department.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Site_Statistic.cs" />
     <Compile Include="Entities\Task.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AchievementRepository.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
     <Compile Include="Repositories\EFUnitOfWork.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Repositories\Site_StatisticRepository.cs" />

@@ -17,6 +17,7 @@ namespace veracity.DAL.Repositories
         private TaskRepository taskRepository;
         private AchievementRepository achievementRepository;
         private Site_StatisticRepository site_statisticRepository;
+        private DepartmentRepository departmentRepository;
         public EFUnitOfWork()
         {
             db = new DataContext();
@@ -57,6 +58,16 @@ namespace veracity.DAL.Repositories
                 if (site_statisticRepository == null)
                     site_statisticRepository = new Site_StatisticRepository(db);
                 return site_statisticRepository;
+            }
+        }
+
+        public IRepository<Department> Departments
+        {
+            get
+            {
+                if (departmentRepository == null)
+                    departmentRepository = new DepartmentRepository(db);
+                return departmentRepository;
             }
         }
         public void Save()

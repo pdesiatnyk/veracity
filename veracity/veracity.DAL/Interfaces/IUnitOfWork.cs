@@ -13,6 +13,7 @@ namespace veracity.DAL.Interfaces
         IRepository<Entities.Task> Tasks { get; }
         IRepository<Achievement> Achievements { get; }
         IRepository<Site_Statistic> Site_Statistics { get; }
+        IRepository<Department> Departments { get; }
         void Save();
     }
 }
