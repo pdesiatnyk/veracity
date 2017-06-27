@@ -15,7 +15,7 @@ namespace veracity.DAL.Entities
         public string Name { get; set; }
         public string Home_adress { get; set; }
         public string Phone_number { get; set; }
-        public int ID_role { get; set; }
+        public bool IsManager { get; set; }
  
     }
 }

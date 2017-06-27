@@ -24,10 +24,16 @@ namespace veracity
         private void Form1_Load(object sender, EventArgs e)
         {
             DataContext db = new DataContext();
-            Employee t = new Employee { ID_employee = 1, ID_role = 1, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321" };
+            
+            Employee t = new Employee { ID_employee = 1, IsManager = false, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321", Login="eblo", Password="bomjara"};
             db.Employees.Add(t);
+
             db.SaveChanges();
-            MessageBox.Show("asfas");
+            List<Employee> ls = db.Employees.ToList();
+            foreach (var k in ls)
+            {
+                MessageBox.Show(k.Login);
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace veracity.DAL.EF
         public DbSet<Entities.Task> Tasks { get; set; }
         public DbSet<Achievement> Achievements { get; set; }
         public DbSet<Site_Statistic> Site_Statistics { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DataContext(): base("DbConnection")
         {

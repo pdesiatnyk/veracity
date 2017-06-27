@@ -10,7 +10,9 @@ namespace veracity.DAL.Entities
     public class User
     {
         [Key]
-        public string Login;
-        public string Password;
+        public int ID { get; set; }
+        public int ID_employee { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     }
 }
