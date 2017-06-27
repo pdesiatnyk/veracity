@@ -9,7 +9,7 @@ using veracity.DAL.Interfaces;
 
 namespace veracity.DAL.Repositories
 {
-    class EmployeeRepository : IRepository<Employee>
+     public class EmployeeRepository : IRepository<Employee>
     {
         private DataContext db;
         public EmployeeRepository (DataContext context)

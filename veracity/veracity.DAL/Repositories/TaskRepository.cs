@@ -11,7 +11,7 @@ using veracity.DAL.Interfaces;
 
 namespace veracity.DAL.Repositories
 {
-    class TaskRepository
+    public class TaskRepository : IRepository<Entities.Task>
     {
         private DataContext db;
 
