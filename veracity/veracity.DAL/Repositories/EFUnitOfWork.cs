@@ -27,7 +27,7 @@ namespace veracity.DAL.Repositories
             get
             {
                 if (employeeRepository == null)
-                    employeeRepository = new EmployeeRepository(db);
+                    employeeRepository = new EmployeeRepository();
                 return employeeRepository;
             }
         }

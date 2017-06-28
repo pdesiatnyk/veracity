@@ -12,9 +12,10 @@ namespace veracity.DAL.Repositories
      public class EmployeeRepository : IRepository<Employee>
     {
         private DataContext db;
-        public EmployeeRepository (DataContext context)
+        public EmployeeRepository ()
         {
-            this.db = context;
+            
+            this.db = new DataContext(); ;
         }
         public IEnumerable<Employee> GetAll()
         {

@@ -18,7 +18,7 @@ namespace veracity.DAL.Entities
         public bool IsManager { get; set; }
         public int Salary { get; set; }
         public int Award { get; set; }
-
+        public int Points { get; set; }
         public ICollection<Achievement> Achievements {get; set;}
         public ICollection<Task> Tasks { get; set; }
         public ICollection<Site_Statistic> Site_Statistics { get; set; }

@@ -85,6 +85,7 @@
             this.Controls.Add(this.BtnStatistic);
             this.Name = "ManagerMain";
             this.Text = "ManagerMain";
+            this.Load += new System.EventHandler(this.ManagerMain_Load);
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,10 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace veracity
 {
+    
     public partial class ManagerMain : Form
     {
+        EmployeeDTO manager;
         public ManagerMain()
         {
             InitializeComponent();
@@ -20,7 +24,7 @@ namespace veracity
         private void BtnStatistic_Click(object sender, EventArgs e)
         {
            
-            ManagerStatistic stat = new ManagerStatistic();
+            ManagerStatistic stat = new ManagerStatistic(manager.Department.ID);
             stat.ShowDialog();
         }
 
@@ -40,6 +44,11 @@ namespace veracity
         {
             ManagerAddTask addtask = new ManagerAddTask();
             addtask.ShowDialog();
+        }
+
+        private void ManagerMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

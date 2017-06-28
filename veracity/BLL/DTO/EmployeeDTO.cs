@@ -13,6 +13,10 @@ namespace BLL.DTO
         public bool IsManager { get; set; }
         public int Salary { get; set; }
         public int Award { get; set; }
+        public int Points { get; set; }
+        public DepartmentDTO Department { get; set; }
+
+        public ICollection<Site_StatisticDTO> Site_Statistics { get; set; }
 
 
     }
