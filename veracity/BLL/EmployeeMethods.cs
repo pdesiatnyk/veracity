@@ -17,8 +17,8 @@ namespace BLL
             DataContext db = new DataContext();
 
             lst = (from p in db.Tasks
-                  where p.ID_employee == id
-                  select p).ToList();
+                   where p.ID_employee == id
+                   select p).ToList();
             return lst;
 
         }
@@ -36,17 +36,17 @@ namespace BLL
             DataContext db = new DataContext();
 
             lst = (from p in db.Site_Statistics
-                   where  p.ID_employee==id
+                   where p.ID_employee == id
                    select p).ToList();
             return lst;
 
         }
         public static int GetTotalHours(int id)
         {
-            int result=0;
+            int result = 0;
             List<Site_Statistic> lst = GetTimeStatistic(id);
 
-            foreach(var r in lst)
+            foreach (var r in lst)
             {
                 result += (r.End_working.Value.Hour - r.Start_working.Value.Hour);
             }
@@ -64,6 +64,27 @@ namespace BLL
             }
 
             return result;
+        }
+        public static int GetTotalPoints(int id)
+        {
+            int result = 0;
+
+            List<Achievement> lst = new List<Achievement>();
+            DataContext db = new DataContext();
+
+            lst = (from p in db.Achievements
+                   where p.Tasks.ID_employee == id
+                   select p).ToList();
+
+            foreach (var p in lst)
+            {
+                result += Convert.ToInt32(p.Achievement_points);
+            }
+            return result;
+        }
+        public static double GetSalary(double time)
+        {
+            return time * 25;
         }
     }
 }

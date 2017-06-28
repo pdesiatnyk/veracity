@@ -120,6 +120,9 @@
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmpProjectedSalaryForm.resx">
+      <DependentUpon>EmpProjectedSalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmpTimeStatisticForm.resx">
       <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>
     </EmbeddedResource>
