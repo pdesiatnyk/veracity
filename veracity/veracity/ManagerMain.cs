@@ -26,7 +26,20 @@ namespace veracity
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ManagerConfirmTask confirm = new ManagerConfirmTask();
+            confirm.ShowDialog();
+        }
 
+        private void BtnSalary_Click(object sender, EventArgs e)
+        {
+            ManagerSalary salary = new ManagerSalary();
+            salary.ShowDialog();
+        }
+
+        private void BtnNewTask_Click(object sender, EventArgs e)
+        {
+            ManagerAddTask addtask = new ManagerAddTask();
+            addtask.ShowDialog();
         }
     }
 }

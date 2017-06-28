@@ -88,6 +88,12 @@
     <Compile Include="ManagerMain.Designer.cs">
       <DependentUpon>ManagerMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerSalary.Designer.cs">
+      <DependentUpon>ManagerSalary.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerStatistic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <EmbeddedResource Include="ManagerMain.resx">
       <DependentUpon>ManagerMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSalary.resx">
+      <DependentUpon>ManagerSalary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerStatistic.resx">
       <DependentUpon>ManagerStatistic.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +159,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\veracity.BLL.csproj">
+      <Project>{e7d946dd-84fe-4e60-80a6-a6aec7e40384}</Project>
+      <Name>veracity.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\veracity.DAL\veracity.DAL.csproj">
       <Project>{22D986D7-30A5-4FB8-926C-7BF70CF78B52}</Project>
       <Name>veracity.DAL</Name>

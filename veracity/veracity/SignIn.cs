@@ -45,6 +45,17 @@ namespace veracity
                 EmployeeForm f1 = new EmployeeForm();
                 f1.ShowDialog();
             }
+            if (e.KeyCode == Keys.M)
+            {
+                MessageBox.Show("Logged in by Manager");
+                ManagerMain man = new ManagerMain();
+                man.ShowDialog();
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

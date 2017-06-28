@@ -52,6 +52,7 @@
             this.BtnNewTask.TabIndex = 1;
             this.BtnNewTask.Text = "Add new task";
             this.BtnNewTask.UseVisualStyleBackColor = true;
+            this.BtnNewTask.Click += new System.EventHandler(this.BtnNewTask_Click);
             // 
             // BtnSalary
             // 
@@ -61,6 +62,7 @@
             this.BtnSalary.TabIndex = 2;
             this.BtnSalary.Text = "Manage salary";
             this.BtnSalary.UseVisualStyleBackColor = true;
+            this.BtnSalary.Click += new System.EventHandler(this.BtnSalary_Click);
             // 
             // BtnConfirm
             // 
