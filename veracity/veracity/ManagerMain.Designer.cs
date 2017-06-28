@@ -31,6 +31,7 @@
             this.BtnStatistic = new System.Windows.Forms.Button();
             this.BtnNewTask = new System.Windows.Forms.Button();
             this.BtnSalary = new System.Windows.Forms.Button();
+            this.BtnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnStatistic
@@ -61,11 +62,22 @@
             this.BtnSalary.Text = "Manage salary";
             this.BtnSalary.UseVisualStyleBackColor = true;
             // 
+            // BtnConfirm
+            // 
+            this.BtnConfirm.Location = new System.Drawing.Point(70, 246);
+            this.BtnConfirm.Name = "BtnConfirm";
+            this.BtnConfirm.Size = new System.Drawing.Size(119, 62);
+            this.BtnConfirm.TabIndex = 3;
+            this.BtnConfirm.Text = "Confirm task";
+            this.BtnConfirm.UseVisualStyleBackColor = true;
+            this.BtnConfirm.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ManagerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(268, 325);
+            this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.BtnSalary);
             this.Controls.Add(this.BtnNewTask);
             this.Controls.Add(this.BtnStatistic);
@@ -80,5 +92,6 @@
         private System.Windows.Forms.Button BtnStatistic;
         private System.Windows.Forms.Button BtnNewTask;
         private System.Windows.Forms.Button BtnSalary;
+        private System.Windows.Forms.Button BtnConfirm;
     }
 }

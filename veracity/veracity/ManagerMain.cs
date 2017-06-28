@@ -19,6 +19,13 @@ namespace veracity
 
         private void BtnStatistic_Click(object sender, EventArgs e)
         {
+           
+            ManagerStatistic stat = new ManagerStatistic();
+            stat.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }
