@@ -25,11 +25,11 @@ namespace veracity
         {
             DataContext db = new DataContext();
             List<Site_Statistic> lst = new List<Site_Statistic>() { new Site_Statistic() };
-            Employee t = new Employee { ID_employee = 1, IsManager = false, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321", Login="eblo", Password="bomjara",Site_Statistics=lst};
+            DAL.Entities.Employee t = new DAL.Entities.Employee { ID_employee = 1, IsManager = false, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321", Login="eblo", Password="bomjara", Site_Statistics = lst };
             db.Employees.Add(t);
 
             db.SaveChanges();
-            List<Employee> ls = db.Employees.ToList();
+            List<DAL.Entities.Employee> ls = db.Employees.ToList();
             foreach (var k in ls)
             {
                 MessageBox.Show(k.Login);
