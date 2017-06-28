@@ -33,5 +33,10 @@ namespace veracity
            
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManagerMethods.AddTask(textBox1.Text, comboBox1.SelectedItem.ToString());
+        }
     }
 }
