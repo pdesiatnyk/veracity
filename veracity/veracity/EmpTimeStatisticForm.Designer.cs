@@ -1,6 +1,6 @@
 ﻿namespace veracity
 {
-    partial class EmpProjectedSalary
+    partial class EmpTimeStatisticForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "EmpProjectedSalary";
+            this.Text = "EmpTimeStatistic";
         }
 
         #endregion

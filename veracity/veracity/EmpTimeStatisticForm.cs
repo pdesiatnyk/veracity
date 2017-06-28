@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace veracity
 {
-    public partial class EmpTimeStatistic : Form
+    public partial class EmpTimeStatisticForm : Form
     {
-        public EmpTimeStatistic()
+        public EmpTimeStatisticForm()
         {
             InitializeComponent();
         }

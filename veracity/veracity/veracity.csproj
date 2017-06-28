@@ -52,23 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmpProjectedSalary.cs">
+    <Compile Include="EmpProjectedSalaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpProjectedSalary.Designer.cs">
-      <DependentUpon>EmpProjectedSalary.cs</DependentUpon>
+    <Compile Include="EmpProjectedSalaryForm.Designer.cs">
+      <DependentUpon>EmpProjectedSalaryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpTaskStatistic.cs">
+    <Compile Include="EmpTaskStatisticForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpTaskStatistic.Designer.cs">
-      <DependentUpon>EmpTaskStatistic.cs</DependentUpon>
+    <Compile Include="EmpTaskStatisticForm.Designer.cs">
+      <DependentUpon>EmpTaskStatisticForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpTimeStatistic.cs">
+    <Compile Include="EmpTimeStatisticForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpTimeStatistic.Designer.cs">
-      <DependentUpon>EmpTimeStatistic.cs</DependentUpon>
+    <Compile Include="EmpTimeStatisticForm.Designer.cs">
+      <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -76,16 +76,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs">
+    <Compile Include="EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Employee.resx">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

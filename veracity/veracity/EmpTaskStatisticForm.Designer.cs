@@ -1,6 +1,6 @@
 ﻿namespace veracity
 {
-    partial class EmpTaskStatistic
+    partial class EmpTaskStatisticForm
     {
         /// <summary>
         /// Required designer variable.

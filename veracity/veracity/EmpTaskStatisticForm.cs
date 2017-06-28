@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace veracity
 {
-    public partial class EmpProjectedSalary : Form
+    public partial class EmpTaskStatisticForm : Form
     {
-        public EmpProjectedSalary()
+        public EmpTaskStatisticForm()
         {
             InitializeComponent();
         }

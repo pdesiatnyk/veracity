@@ -23,7 +23,7 @@ namespace veracity
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            DataContext db = new DataContext();
+            /*DataContext db = new DataContext();
             List<Site_Statistic> lst = new List<Site_Statistic>() { new Site_Statistic() };
             DAL.Entities.Employee t = new DAL.Entities.Employee { ID_employee = 1, IsManager = false, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321", Login="eblo", Password="bomjara", Site_Statistics = lst };
             db.Employees.Add(t);
@@ -33,7 +33,8 @@ namespace veracity
             foreach (var k in ls)
             {
                 MessageBox.Show(k.Login);
-            }
+            }*/
+            Employee 
         }
     }
 }

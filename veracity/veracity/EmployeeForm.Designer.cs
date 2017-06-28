@@ -1,6 +1,6 @@
 ﻿namespace veracity
 {
-    partial class Employee
+    partial class EmployeeForm
     {
         /// <summary>
         /// Required designer variable.
