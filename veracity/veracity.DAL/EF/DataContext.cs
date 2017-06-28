@@ -19,7 +19,8 @@ namespace veracity.DAL.EF
 
         public DataContext(): base("DbConnection")
         {
-
+            this.Configuration.ProxyCreationEnabled = true;
+            this.Configuration.LazyLoadingEnabled = true;
         }
         static DataContext()
         {

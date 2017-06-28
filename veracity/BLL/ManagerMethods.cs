@@ -15,8 +15,8 @@ namespace BLL
 
         public static List<Employee> GetAllByDepartment(int depId) {
             DataContext db = new DataContext();
-            db.Configuration.ProxyCreationEnabled = true;
-            db.Configuration.LazyLoadingEnabled = true;
+            //db.Configuration.ProxyCreationEnabled = true;
+            //db.Configuration.LazyLoadingEnabled = true;
             List<Employee> ret = db.Employees.Where(x => x.Departments.ID == depId && x.IsManager==false).ToList();
 
 
