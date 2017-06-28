@@ -43,6 +43,16 @@ namespace BLL
 
         }
 
+        public static void AddTask(string text, string v)
+        {
+            DataContext db = new DataContext();
+            Employee emp = db.Employees.Where(x => x.Name == v).FirstOrDefault();
+            int id = emp.ID_employee;
+            veracity.DAL.Entities.Task task = new veracity.DAL.Entities.Task() {ID_employee=id, Task_descr=text, Status="In progress" };
+            db.Tasks.Add(task);
+            db.SaveChanges();
+
+        }
 
         public static EmployeeDTO TransformEmplToDTO(Employee item)
         {
