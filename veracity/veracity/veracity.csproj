@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmpProjectedSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpProjectedSalary.Designer.cs">
+      <DependentUpon>EmpProjectedSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTaskStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpTaskStatistic.Designer.cs">
+      <DependentUpon>EmpTaskStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTimeStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpTimeStatistic.Designer.cs">
+      <DependentUpon>EmpTimeStatistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

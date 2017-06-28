@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace veracity
 {
-    public partial class Employee : Form
+    public partial class EmpTaskStatistic : Form
     {
-        public Employee()
+        public EmpTaskStatistic()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
