@@ -46,14 +46,14 @@ namespace veracity.DAL.EF
             db.Employees.AddRange(new List<Employee> { e1, e2, e3, e4, m1, m2 });
             db.SaveChanges();
 
-            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "status1", Task_descr = "description1" };
-            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "status2", Task_descr = "description2" };
-            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "status3", Task_descr = "description3" };
-            Entities.Task t3 = new Entities.Task() { ID_employee = 2, Status = "status4", Task_descr = "description4" };
-            Entities.Task t5 = new Entities.Task() { ID_employee = 3, Status = "status5", Task_descr = "description5" };
-            Entities.Task t6 = new Entities.Task() { ID_employee = 3, Status = "status6", Task_descr = "description6" };
-            Entities.Task t7 = new Entities.Task() { ID_employee = 4, Status = "status7", Task_descr = "description7" };
-            Entities.Task t8 = new Entities.Task() { ID_employee = 4, Status = "status8", Task_descr = "description8" };
+            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description1" };
+            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description2" };
+            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "assigned", Task_descr = "description3" };
+            Entities.Task t3 = new Entities.Task() { ID_employee = 2, Status = "done", Task_descr = "description4" };
+            Entities.Task t5 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description5" };
+            Entities.Task t6 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description6" };
+            Entities.Task t7 = new Entities.Task() { ID_employee = 4, Status = "done", Task_descr = "description7" };
+            Entities.Task t8 = new Entities.Task() { ID_employee = 4, Status = "done", Task_descr = "description8" };
             db.Tasks.AddRange(new List<Entities.Task> { t1, t2, t3, t4, t5, t6, t7, t8 });
             db.SaveChanges();
 
@@ -70,8 +70,16 @@ namespace veracity.DAL.EF
             db.Achievements.AddRange(new List<Achievement> { a1,a2,a3,a4,a5,a6,a7,a8});
             db.SaveChanges();
 
-
-
+            Site_Statistic s1 = new Site_Statistic() { ID_employee = 1, Datetime_of_record = new DateTime(2017, 06, 28, 8, 0, 0, 0), Start_working = new DateTime(2017, 06, 28, 8, 0, 0, 0), End_working = new DateTime(2017, 06, 28, 16, 0, 0, 0) };
+            Site_Statistic s2 = new Site_Statistic() { ID_employee = 1, Datetime_of_record = new DateTime(2017, 06, 27, 8, 0, 0, 0), Start_working = new DateTime(2017, 06, 27, 8, 0, 0, 0), End_working = new DateTime(2017, 06, 27, 17, 0, 0, 0) };
+            Site_Statistic s3 = new Site_Statistic() { ID_employee = 2, Datetime_of_record = new DateTime(2017, 06, 28, 8, 0, 0, 0), Start_working = new DateTime(2017, 06, 28, 8, 0, 0, 0), End_working = new DateTime(2017, 06, 28, 17, 0, 0, 0) };
+            Site_Statistic s4 = new Site_Statistic() { ID_employee = 2, Datetime_of_record = new DateTime(2017, 06, 27, 9, 0, 0, 0), Start_working = new DateTime(2017, 06, 27, 9, 0, 0, 0), End_working = new DateTime(2017, 06, 27, 19, 0, 0, 0) };
+            Site_Statistic s5 = new Site_Statistic() { ID_employee = 3, Datetime_of_record = new DateTime(2017, 06, 28, 9, 0, 0, 0), Start_working = new DateTime(2017, 06, 28, 9, 0, 0, 0), End_working = new DateTime(2017, 06, 28, 18, 0, 0, 0) };
+            Site_Statistic s6 = new Site_Statistic() { ID_employee = 3, Datetime_of_record = new DateTime(2017, 06, 27, 9, 0, 0, 0), Start_working = new DateTime(2017, 06, 27, 9, 0, 0, 0), End_working = new DateTime(2017, 06, 27, 18, 0, 0, 0) };
+            Site_Statistic s7 = new Site_Statistic() { ID_employee = 4, Datetime_of_record = new DateTime(2017, 06, 28, 8, 30, 0, 0), Start_working = new DateTime(2017, 06, 28, 8, 30, 0, 0), End_working = new DateTime(2017, 06, 28, 17, 0, 0, 0) };
+            Site_Statistic s8 = new Site_Statistic() { ID_employee = 5, Datetime_of_record = new DateTime(2017, 06, 27, 8, 30, 0, 0), Start_working = new DateTime(2017, 06, 27, 8, 30, 0, 0), End_working = new DateTime(2017, 06, 27, 18, 0, 0, 0) };
+            db.Site_Statistics.AddRange(new List<Site_Statistic> {s1,s2,s3,s4,s5,s6,s7,s8 });
+            db.SaveChanges();
 
 
 
