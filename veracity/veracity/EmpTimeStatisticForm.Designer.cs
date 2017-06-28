@@ -41,9 +41,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "EmployeeName";
+            this.label1.Text = "Employee Name";
             // 
             // label2
             // 
@@ -59,9 +59,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Total time";
+            this.label3.Text = "Total hours";
             // 
             // label4
             // 

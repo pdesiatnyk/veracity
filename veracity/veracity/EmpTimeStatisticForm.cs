@@ -32,12 +32,12 @@ namespace veracity
             int minutes = EmployeeMethods.GetTotalMinutes(UserID);
             double time = hours * 60 + minutes;
             time /= 60;
-            double m2 = time - (int)time;
+            /*double m2 = time - (int)time;
             m2 *= 60;
-            double h = Math.Truncate(time);
+            double h = Math.Truncate(time);*/
             string userName = EmployeeMethods.GetUserNameById(UserID);
             label2.Text = userName;
-            label4.Text = h.ToString()+" hours "+m2.ToString()+" minutes";
+            label4.Text = time.ToString();
             dataGridView1.DataSource = lst;
 
             dataGridView1.Columns[0].Name = "Record ID";
