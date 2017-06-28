@@ -24,7 +24,7 @@ namespace veracity
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            DataContext db = new DataContext();
+            /*DataContext db = new DataContext();
             List<Site_Statistic> lst = new List<Site_Statistic>() { new Site_Statistic()  };
             List<Site_Statistic> lst1 = new List<Site_Statistic>() { new Site_Statistic() };
             List<Site_Statistic> lst2 = new List<Site_Statistic>() { new Site_Statistic() };
