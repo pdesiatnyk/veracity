@@ -16,6 +16,6 @@ namespace veracity.DAL.Entities
         public string Task_descr { get; set; }
 
  
-        public Achievement Achievements { get; set; }
+       // public Achievement Achievements { get; set; }
     }
 }

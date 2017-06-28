@@ -12,14 +12,20 @@ namespace veracity
 {
     public partial class EmployeeForm : Form
     {
+        public int UserID;
         public EmployeeForm()
         {
+            InitializeComponent();
+        }
+        public EmployeeForm(int id)
+        {
+            UserID = id;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EmpTaskStatisticForm f1 = new EmpTaskStatisticForm();
+            EmpTaskStatisticForm f1 = new EmpTaskStatisticForm(UserID);
             f1.ShowDialog();
         }
 

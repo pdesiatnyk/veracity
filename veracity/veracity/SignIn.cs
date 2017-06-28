@@ -23,13 +23,19 @@ namespace veracity
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*DataContext db = new DataContext();
-            List<Site_Statistic> lst = new List<Site_Statistic>() { new Site_Statistic() };
+            DataContext db = new DataContext();
+            List<Site_Statistic> lst = new List<Site_Statistic>() { new Site_Statistic()  };
             DAL.Entities.Employee t = new DAL.Entities.Employee { ID_employee = 1, IsManager = false, Home_adress = "asdasd", Name = "ebalo", Phone_number = "02013321", Login="eblo", Password="bomjara", Site_Statistics = lst };
+
             db.Employees.Add(t);
 
             db.SaveChanges();
-            List<DAL.Entities.Employee> ls = db.Employees.ToList();
+            DAL.Entities.Task task1 = new DAL.Entities.Task { ID_employee = 1, ID_task = 1, Status = "test st", Task_descr = "test descr" };
+            DAL.Entities.Task task2 = new DAL.Entities.Task { ID_employee = 1, ID_task = 2, Status = "test st2", Task_descr = "test descr2" };
+            db.Tasks.Add(task1);
+            db.Tasks.Add(task2);
+            db.SaveChanges();
+            /*List<DAL.Entities.Employee> ls = db.Employees.ToList();
             foreach (var k in ls)
             {
                 MessageBox.Show(k.Login);
@@ -68,12 +74,12 @@ namespace veracity
                 }
                 else MessageBox.Show("User not found");
             }
-            if (e.KeyCode == Keys.M)
+            /*if (e.KeyCode == Keys.M)
             {
                 MessageBox.Show("Logged in by Manager");
                 ManagerMain man = new ManagerMain();
                 man.ShowDialog();
-            }
+            }*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
