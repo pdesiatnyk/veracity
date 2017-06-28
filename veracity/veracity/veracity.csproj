@@ -70,6 +70,12 @@
     <Compile Include="EmpTimeStatisticForm.Designer.cs">
       <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerMain.Designer.cs">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerMain.resx">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
