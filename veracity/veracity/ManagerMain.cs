@@ -31,7 +31,7 @@ namespace veracity
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ManagerConfirmTask confirm = new ManagerConfirmTask();
+            ManagerConfirmTask confirm = new ManagerConfirmTask(dep.ID);
             confirm.ShowDialog();
         }
 

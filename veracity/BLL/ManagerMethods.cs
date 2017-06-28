@@ -43,6 +43,30 @@ namespace BLL
 
         }
 
+        public static List<veracity.DAL.Entities.Task> GetUnconfTasks(int dep)
+        {
+            List<veracity.DAL.Entities.Task> list=new List<veracity.DAL.Entities.Task>();
+            List<Employee> empl = ManagerMethods.GetAllByDepartment(dep);
+            foreach (var item in empl)
+            {
+                List<veracity.DAL.Entities.Task> tsks = EmployeeMethods.GetTaskStatistic(item.ID_employee);
+                foreach (var task in tsks)
+                {
+                    if (task.Status=="Waiting for acceptance")
+                    {
+                        list.Add(task);
+                    }
+                }
+
+            }
+
+            
+            return list;
+            
+        }
+
+       
+
         public static void AddTask(string text, string v)
         {
             DataContext db = new DataContext();
