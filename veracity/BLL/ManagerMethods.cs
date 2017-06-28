@@ -19,21 +19,8 @@ namespace BLL
 
             foreach (Employee item in emplall)
             {
-                EmployeeDTO dto = new EmployeeDTO();
-                dto.Department.ID = item.Departments.ID;
-                dto.Department.Name = item.Departments.Name;
-                dto.Name = item.Name;
-                dto.Points = item.Points;
-                foreach (Site_Statistic stat in item.Site_Statistics)
-                {
-                    Site_StatisticDTO statadto = new Site_StatisticDTO();
-                    statadto.ID_record = stat.ID_record;
-                    statadto.Start_working = stat.Start_working;
-                    statadto.End_working= stat.End_working;
-
-                    dto.Site_Statistics.Add(statadto);
-                }
-                returnlist.Add(dto);
+                
+                returnlist.Add(TransformEmplToDTO(item));
               
             }
             foreach (var item in returnlist)
@@ -46,6 +33,25 @@ namespace BLL
 
             return returnlist;
 
+        }
+        public static EmployeeDTO TransformEmplToDTO(Employee item)
+        {
+
+            EmployeeDTO dto = new EmployeeDTO();
+            dto.Department.ID = item.Departments.ID;
+            dto.Department.Name = item.Departments.Name;
+            dto.Name = item.Name;
+            dto.Points = item.Points;
+            foreach (Site_Statistic stat in item.Site_Statistics)
+            {
+                Site_StatisticDTO statadto = new Site_StatisticDTO();
+                statadto.ID_record = stat.ID_record;
+                statadto.Start_working = stat.Start_working;
+                statadto.End_working = stat.End_working;
+
+                dto.Site_Statistics.Add(statadto);
+            }
+            return dto;
         }
 
         public static double CalculateTime(EmployeeDTO emp)

@@ -16,8 +16,9 @@ namespace veracity
     public partial class ManagerMain : Form
     {
         EmployeeDTO manager;
-        public ManagerMain()
+        public ManagerMain(EmployeeDTO manager)
         {
+            this.manager = manager;
             InitializeComponent();
         }
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using veracity.DAL.EF;
 using veracity.DAL.Entities;
+using BLL;
 using veracity.DAL.Interfaces;
 using veracity.DAL.Repositories;
 
@@ -64,7 +65,7 @@ namespace veracity
                     else
                     {
                         MessageBox.Show("Logged in as manager");
-                        ManagerMain f1 = new ManagerMain();
+                        ManagerMain f1 = new ManagerMain(ManagerMethods.TransformEmplToDTO(worker));
                         f1.ShowDialog();
                     }
                 }else
