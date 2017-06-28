@@ -38,7 +38,7 @@ namespace veracity
 
         private void BtnEmpProjectedSalary_Click(object sender, EventArgs e)
         {
-            EmpProjectedSalaryForm f1 = new EmpProjectedSalaryForm();
+            EmpProjectedSalaryForm f1 = new EmpProjectedSalaryForm(UserID);
             f1.ShowDialog();
         }
 
