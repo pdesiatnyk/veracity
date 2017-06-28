@@ -70,7 +70,8 @@ namespace veracity
                     else
                     {
                         MessageBox.Show("Logged in as manager");
-                        ManagerMain f1 = new ManagerMain(ManagerMethods.TransformEmplToDTO(worker));
+                        Department dep= db.Departments.FirstOrDefault();
+                        ManagerMain f1 = new ManagerMain(dep);
                         f1.ShowDialog();
                     }
                 }else

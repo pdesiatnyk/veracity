@@ -8,24 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using veracity.DAL.Entities;
 
 namespace veracity
 {
     
     public partial class ManagerMain : Form
     {
-        EmployeeDTO manager;
-        public ManagerMain(EmployeeDTO manager)
+        Department dep;
+        public ManagerMain(Department dep)
         {
-            this.manager = manager;
+            this.dep = dep;
             InitializeComponent();
         }
 
         private void BtnStatistic_Click(object sender, EventArgs e)
         {
-           
-            ManagerStatistic stat = new ManagerStatistic(manager.Department.ID);
+
+            ManagerStatistic stat = new ManagerStatistic(dep.ID);
             stat.ShowDialog();
         }
 
@@ -43,7 +43,7 @@ namespace veracity
 
         private void BtnNewTask_Click(object sender, EventArgs e)
         {
-            ManagerAddTask addtask = new ManagerAddTask();
+            ManagerAddTask addtask = new ManagerAddTask(dep.ID);
             addtask.ShowDialog();
         }
 

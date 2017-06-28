@@ -80,6 +80,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "ManagerAddTask";
             this.Text = "ManagerAddTask";
+            this.Load += new System.EventHandler(this.ManagerAddTask_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

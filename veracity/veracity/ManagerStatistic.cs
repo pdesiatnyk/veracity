@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL.DTO;
 using BLL;
+using veracity.DAL.Entities;
 
 namespace veracity
 {
@@ -29,15 +30,15 @@ namespace veracity
 
         private void ManagerStatistic_Load(object sender, EventArgs e)
         {
-           List<EmployeeDTO> list =  ManagerMethods.GetAllByDepartment(department);
+           List<Employee> list =  ManagerMethods.GetAllByDepartment(department);
             for (int i = 0; i < list.Count; i++)
             {
                 
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[i].Cells[0].Value = list[i].ID_employee;
                 dataGridView1.Rows[i].Cells[1].Value = list[i].Name;
-                dataGridView1.Rows[i].Cells[2].Value = list[i].Department.ID;
-                dataGridView1.Rows[i].Cells[3].Value = ManagerMethods.CalculateTime(list[i]);
+                dataGridView1.Rows[i].Cells[2].Value = list[i].Departments.ID;
+                dataGridView1.Rows[i].Cells[3].Value =1/* ManagerMethods.CalculateTime(list[i])*/;
                 dataGridView1.Rows[i].Cells[4].Value = list[i].Points;
 
             }

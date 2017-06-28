@@ -22,6 +22,6 @@ namespace veracity.DAL.Entities
         public ICollection<Achievement> Achievements {get; set;}
         public ICollection<Task> Tasks { get; set; }
         public ICollection<Site_Statistic> Site_Statistics { get; set; }
-        public Department Departments { get; set; }
+        public virtual Department Departments { get; set; }
     }
 }
