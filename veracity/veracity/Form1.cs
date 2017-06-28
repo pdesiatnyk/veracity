@@ -34,7 +34,8 @@ namespace veracity
             {
                 MessageBox.Show(k.Login);
             }*/
-            Employee 
+            EmployeeForm f1 = new EmployeeForm();
+            f1.ShowDialog();
         }
     }
 }

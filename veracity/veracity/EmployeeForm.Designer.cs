@@ -28,48 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnEmpTaskStatictic = new System.Windows.Forms.Button();
+            this.BtnEmpTimeStatictic = new System.Windows.Forms.Button();
+            this.BtnEmpProjectedSalary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnEmpTaskStatictic
             // 
-            this.button1.Location = new System.Drawing.Point(56, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Task Statistic";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnEmpTaskStatictic.Location = new System.Drawing.Point(56, 37);
+            this.BtnEmpTaskStatictic.Name = "BtnEmpTaskStatictic";
+            this.BtnEmpTaskStatictic.Size = new System.Drawing.Size(140, 60);
+            this.BtnEmpTaskStatictic.TabIndex = 0;
+            this.BtnEmpTaskStatictic.Text = "Task Statistic";
+            this.BtnEmpTaskStatictic.UseVisualStyleBackColor = true;
+            this.BtnEmpTaskStatictic.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // BtnEmpTimeStatictic
             // 
-            this.button2.Location = new System.Drawing.Point(56, 103);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Time Statistic";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnEmpTimeStatictic.Location = new System.Drawing.Point(56, 103);
+            this.BtnEmpTimeStatictic.Name = "BtnEmpTimeStatictic";
+            this.BtnEmpTimeStatictic.Size = new System.Drawing.Size(140, 60);
+            this.BtnEmpTimeStatictic.TabIndex = 1;
+            this.BtnEmpTimeStatictic.Text = "Time Statistic";
+            this.BtnEmpTimeStatictic.UseVisualStyleBackColor = true;
+            this.BtnEmpTimeStatictic.Click += new System.EventHandler(this.BtnEmpTimeStatictic_Click);
             // 
-            // button3
+            // BtnEmpProjectedSalary
             // 
-            this.button3.Location = new System.Drawing.Point(56, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 60);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Projected Salary";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnEmpProjectedSalary.Location = new System.Drawing.Point(56, 169);
+            this.BtnEmpProjectedSalary.Name = "BtnEmpProjectedSalary";
+            this.BtnEmpProjectedSalary.Size = new System.Drawing.Size(140, 60);
+            this.BtnEmpProjectedSalary.TabIndex = 1;
+            this.BtnEmpProjectedSalary.Text = "Projected Salary";
+            this.BtnEmpProjectedSalary.UseVisualStyleBackColor = true;
+            this.BtnEmpProjectedSalary.Click += new System.EventHandler(this.BtnEmpProjectedSalary_Click);
             // 
-            // Employee
+            // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(272, 291);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Employee";
+            this.Controls.Add(this.BtnEmpProjectedSalary);
+            this.Controls.Add(this.BtnEmpTimeStatictic);
+            this.Controls.Add(this.BtnEmpTaskStatictic);
+            this.Name = "EmployeeForm";
             this.Text = "Form2";
             this.ResumeLayout(false);
 
@@ -77,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnEmpTaskStatictic;
+        private System.Windows.Forms.Button BtnEmpTimeStatictic;
+        private System.Windows.Forms.Button BtnEmpProjectedSalary;
     }
 }
