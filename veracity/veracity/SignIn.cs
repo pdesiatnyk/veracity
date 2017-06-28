@@ -41,9 +41,32 @@ namespace veracity
         {
             if (e.KeyCode==Keys.Enter)
             {
-                MessageBox.Show("Logged in");
-                EmployeeForm f1 = new EmployeeForm();
-                f1.ShowDialog();
+                string login = textBox1.Text;
+                string password = textBox2.Text;
+                DataContext db = new DataContext();
+                Employee worker = db.Employees.Where(p => p.Login == login).FirstOrDefault();
+                if(worker != null)
+                { 
+                if ((worker.Password == password))
+                {
+                    if (worker.IsManager == false)
+                    {
+                        MessageBox.Show("Logged in as employee");
+                        EmployeeForm f1 = new EmployeeForm();
+                        f1.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Logged in as manager");
+                        ManagerMain f1 = new ManagerMain();
+                        f1.ShowDialog();
+                    }
+                }else
+                {
+                    MessageBox.Show("Wrong password");
+                }
+                }
+                else MessageBox.Show("User not found");
             }
         }
     }
