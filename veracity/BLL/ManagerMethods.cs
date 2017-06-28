@@ -38,8 +38,8 @@ namespace BLL
         {
 
             EmployeeDTO dto = new EmployeeDTO();
-            dto.Department.ID = item.Departments.ID;
-            dto.Department.Name = item.Departments.Name;
+            //dto.Department.ID = item.Departments.ID;
+            //dto.Department.Name = item.Departments.Name;
             dto.Name = item.Name;
             dto.Points = item.Points;
             foreach (Site_Statistic stat in item.Site_Statistics)
