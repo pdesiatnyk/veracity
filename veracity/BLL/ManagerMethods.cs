@@ -8,10 +8,10 @@ namespace BLL
 {
     public static class ManagerMethods
     {
-        public void AddNewTask() {
+        /*public void AddNewTask() {
 
 
-        }
+        }*/
 
 
 
