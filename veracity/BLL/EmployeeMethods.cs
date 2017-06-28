@@ -30,5 +30,40 @@ namespace BLL
             return emp.Name;
         }
 
+        public static List<Site_Statistic> GetTimeStatistic(int id)
+        {
+            List<Site_Statistic> lst = new List<Site_Statistic>();
+            DataContext db = new DataContext();
+
+            lst = (from p in db.Site_Statistics
+                   where  p.ID_employee==id
+                   select p).ToList();
+            return lst;
+
+        }
+        public static int GetTotalHours(int id)
+        {
+            int result=0;
+            List<Site_Statistic> lst = GetTimeStatistic(id);
+
+            foreach(var r in lst)
+            {
+                result += (r.End_working.Value.Hour - r.Start_working.Value.Hour);
+            }
+
+            return result;
+        }
+        public static int GetTotalMinutes(int id)
+        {
+            int result = 0;
+            List<Site_Statistic> lst = GetTimeStatistic(id);
+
+            foreach (var r in lst)
+            {
+                result += (r.End_working.Value.Minute - r.Start_working.Value.Minute);
+            }
+
+            return result;
+        }
     }
 }

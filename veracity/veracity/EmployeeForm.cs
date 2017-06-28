@@ -32,7 +32,7 @@ namespace veracity
 
         private void BtnEmpTimeStatictic_Click(object sender, EventArgs e)
         {
-            EmpTimeStatisticForm f1 = new EmpTimeStatisticForm();
+            EmpTimeStatisticForm f1 = new EmpTimeStatisticForm(UserID);
             f1.ShowDialog();
         }
 
