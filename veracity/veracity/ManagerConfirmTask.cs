@@ -16,5 +16,10 @@ namespace veracity
         {
             InitializeComponent();
         }
+
+        private void ManagerConfirmTask_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

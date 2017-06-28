@@ -47,9 +47,9 @@ namespace veracity.DAL.EF
             db.Employees.AddRange(new List<Employee> { e1, e2, e3, e4, m1, m2 });
             db.SaveChanges();
 
-            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description1" };
-            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description2" };
-            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "assigned", Task_descr = "description3" };
+            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "in progress", Task_descr = "description1" };
+            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "in progress", Task_descr = "description2" };
+            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "in progress", Task_descr = "description3" };
             Entities.Task t3 = new Entities.Task() { ID_employee = 2, Status = "done", Task_descr = "description4" };
             Entities.Task t5 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description5" };
             Entities.Task t6 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description6" };

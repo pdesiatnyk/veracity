@@ -20,8 +20,21 @@ namespace BLL
                    where p.ID_employee == id
                    select p).ToList();
             return lst;
+        }
+        public static List<veracity.DAL.Entities.Task> GetUsersTasks(int id)
+        {
+            List<veracity.DAL.Entities.Task> lst = new List<veracity.DAL.Entities.Task>();
+            DataContext db = new DataContext();
+
+            lst = (from p in db.Tasks
+                   where p.ID_employee == id
+                   where p.Status=="in progress"
+                   select p).ToList();
+            return lst;
 
         }
+
+
         public static string GetUserNameById(int id)
         {
             DataContext db = new DataContext();
@@ -86,5 +99,20 @@ namespace BLL
         {
             return time * 25;
         }
+
+        public static void SubmitTask(int id)
+        {
+            veracity.DAL.Entities.Task lst = new veracity.DAL.Entities.Task();
+            DataContext db = new DataContext();
+
+            lst = (from p in db.Tasks
+                   where p.ID_task == id
+                   select p).FirstOrDefault();
+            lst.Status = "Waiting for acceptance";
+            db.SaveChanges();
+
+        }
+
+        
     }
 }

@@ -46,5 +46,11 @@ namespace veracity
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            EmpSendTaskForm f1 = new EmpSendTaskForm(UserID);
+            f1.ShowDialog();
+        }
     }
 }
