@@ -61,6 +61,12 @@
     <Compile Include="EmpProjectedSalaryForm.Designer.cs">
       <DependentUpon>EmpProjectedSalaryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmpSendTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpSendTaskForm.Designer.cs">
+      <DependentUpon>EmpSendTaskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmpTaskStatisticForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmpProjectedSalaryForm.resx">
       <DependentUpon>EmpProjectedSalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpSendTaskForm.resx">
+      <DependentUpon>EmpSendTaskForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmpTimeStatisticForm.resx">
       <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>

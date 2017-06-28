@@ -37,7 +37,7 @@ namespace veracity
 
         private void BtnSalary_Click(object sender, EventArgs e)
         {
-            ManagerSalary salary = new ManagerSalary();
+            ManagerSalary salary = new ManagerSalary(dep.ID);
             salary.ShowDialog();
         }
 

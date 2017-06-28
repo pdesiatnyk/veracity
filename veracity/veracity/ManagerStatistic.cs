@@ -38,8 +38,8 @@ namespace veracity
                 dataGridView1.Rows[i].Cells[0].Value = list[i].ID_employee;
                 dataGridView1.Rows[i].Cells[1].Value = list[i].Name;
                 dataGridView1.Rows[i].Cells[2].Value = list[i].Departments.ID;
-                dataGridView1.Rows[i].Cells[3].Value =1/* ManagerMethods.CalculateTime(list[i])*/;
-                dataGridView1.Rows[i].Cells[4].Value = list[i].Points;
+                dataGridView1.Rows[i].Cells[3].Value =EmployeeMethods.GetTotalHours(list[i].ID_employee);
+                dataGridView1.Rows[i].Cells[4].Value = EmployeeMethods.GetTotalPoints(list[i].ID_employee);
 
             }
            

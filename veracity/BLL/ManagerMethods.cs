@@ -15,8 +15,6 @@ namespace BLL
 
         public static List<Employee> GetAllByDepartment(int depId) {
             DataContext db = new DataContext();
-            //db.Configuration.ProxyCreationEnabled = true;
-            //db.Configuration.LazyLoadingEnabled = true;
             List<Employee> ret = db.Employees.Where(x => x.Departments.ID == depId && x.IsManager==false).ToList();
 
 
@@ -40,6 +38,35 @@ namespace BLL
 
             //   return returnlist;
             return ret;
+
+        }
+
+        public static void ConfirmTask(int id, string points)
+        {
+
+            DataContext db = new DataContext();
+            veracity.DAL.Entities.Task tsk = db.Tasks.Find(id);
+            Achievement ach = new Achievement() { Achievement_points=points, ID_task=id , Tasks=tsk};
+            db.Achievements.Add(ach);
+            tsk.Status = "Done";
+            db.SaveChanges();
+        }
+
+        public static void ChangeSalary(int idempl, int award)
+        {
+            DataContext db = new DataContext();
+            Employee emp = db.Employees.Find(idempl);
+            double totalhrs = Convert.ToDouble(EmployeeMethods.GetTotalHours(emp.ID_employee));
+            emp.Salary = EmployeeMethods.GetSalary(totalhrs)+award;
+            db.SaveChanges();
+
+
+        }
+
+        public static Employee FindEmplById(int id)
+        {
+            DataContext db = new DataContext();
+            return db.Employees.Find(id);
 
         }
 

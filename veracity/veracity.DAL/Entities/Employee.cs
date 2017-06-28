@@ -16,7 +16,7 @@ namespace veracity.DAL.Entities
         public string Home_adress { get; set; }
         public string Phone_number { get; set; }
         public bool IsManager { get; set; }
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         public int Award { get; set; }
         public int Points { get; set; }
         public ICollection<Achievement> Achievements {get; set;}

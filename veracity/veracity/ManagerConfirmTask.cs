@@ -1,5 +1,4 @@
-﻿using BLL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,12 +19,17 @@ namespace veracity
         }
 
         private void ManagerConfirmTask_Load(object sender, EventArgs e)
-        {
+    {
             List<DAL.Entities.Task> list = ManagerMethods.GetUnconfTasks(dep);
             foreach (var item in list)
-            {
+        {
                 MessageBox.Show(item.Task_descr);
             }
+
+        }
+
+        private void ManagerConfirmTask_Load(object sender, EventArgs e)
+        {
 
         }
     }

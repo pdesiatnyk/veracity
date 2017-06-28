@@ -37,19 +37,19 @@ namespace veracity.DAL.EF
             db.Departments.AddRange(new List<Department> { d1, d2 });
             db.SaveChanges();
 
-            Employee e1 = new Employee() { Login = "login1", Password = "pass1", Name = "Name1", Home_adress = "adress1", Phone_number = "phone1", IsManager = false, Departments = d1};
-            Employee e2 = new Employee() { Login = "login2", Password = "pass2", Name = "Name2", Home_adress = "adress2", Phone_number = "phone2", IsManager = false, Departments = d1};
-            Employee e3 = new Employee() { Login = "login3", Password = "pass3", Name = "Name3", Home_adress = "adress3", Phone_number = "phone3", IsManager = false, Departments = d2 };
-            Employee e4 = new Employee() { Login = "login4", Password = "pass4", Name = "Name4", Home_adress = "adress4", Phone_number = "phone4", IsManager = false, Departments = d2 };
+            Employee e1 = new Employee() { Login = "login1", Password = "pass1", Name = "Name1", Home_adress = "adress1", Phone_number = "phone1", IsManager = false, Salary=0, Departments = d1};
+            Employee e2 = new Employee() { Login = "login2", Password = "pass2", Name = "Name2", Home_adress = "adress2", Phone_number = "phone2", IsManager = false, Salary = 0, Departments = d1};
+            Employee e3 = new Employee() { Login = "login3", Password = "pass3", Name = "Name3", Home_adress = "adress3", Phone_number = "phone3", IsManager = false, Salary = 0, Departments = d2 };
+            Employee e4 = new Employee() { Login = "login4", Password = "pass4", Name = "Name4", Home_adress = "adress4", Phone_number = "phone4", IsManager = false, Salary = 0, Departments = d2 };
             Employee m1 = new Employee() { Login = "man1", Password = "man1", Name = "man1", Home_adress = "adress5", Phone_number = "phone5", IsManager = true, Departments = d1 };
             Employee m2 = new Employee() { Login = "man2", Password = "man2", Name = "man2", Home_adress = "adress6", Phone_number = "phone6", IsManager = true, Departments = d2 };
 
             db.Employees.AddRange(new List<Employee> { e1, e2, e3, e4, m1, m2 });
             db.SaveChanges();
 
-            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description1" };
-            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "done", Task_descr = "description2" };
-            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "assigned", Task_descr = "description3" };
+            Entities.Task t1 = new Entities.Task() { ID_employee = 1, Status = "in progress", Task_descr = "description1" };
+            Entities.Task t2 = new Entities.Task() { ID_employee = 1, Status = "in progress", Task_descr = "description2" };
+            Entities.Task t4 = new Entities.Task() { ID_employee = 2, Status = "in progress", Task_descr = "description3" };
             Entities.Task t3 = new Entities.Task() { ID_employee = 2, Status = "done", Task_descr = "description4" };
             Entities.Task t5 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description5" };
             Entities.Task t6 = new Entities.Task() { ID_employee = 3, Status = "done", Task_descr = "description6" };
