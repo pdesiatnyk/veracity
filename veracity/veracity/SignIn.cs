@@ -14,9 +14,9 @@ using veracity.DAL.Repositories;
 
 namespace veracity
 {
-    public partial class Form1 : Form
+    public partial class SignIn : Form
     {
-        public Form1()
+        public SignIn()
         {
             InitializeComponent();
         }
@@ -34,8 +34,17 @@ namespace veracity
             {
                 MessageBox.Show(k.Login);
             }*/
-            EmployeeForm f1 = new EmployeeForm();
-            f1.ShowDialog();
+           
+        }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Enter)
+            {
+                MessageBox.Show("Logged in");
+                EmployeeForm f1 = new EmployeeForm();
+                f1.ShowDialog();
+            }
         }
     }
 }

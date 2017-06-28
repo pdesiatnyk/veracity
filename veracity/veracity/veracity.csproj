@@ -70,11 +70,17 @@
     <Compile Include="EmpTimeStatisticForm.Designer.cs">
       <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="ManagerMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ManagerMain.Designer.cs">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeForm.cs">
       <SubType>Form</SubType>
@@ -87,17 +93,11 @@
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpProjectedSalaryForm.resx">
-      <DependentUpon>EmpProjectedSalaryForm.cs</DependentUpon>
+    <EmbeddedResource Include="ManagerMain.resx">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpTaskStatisticForm.resx">
-      <DependentUpon>EmpTaskStatisticForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmpTimeStatisticForm.resx">
-      <DependentUpon>EmpTimeStatisticForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,10 +123,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\veracity.BLL.csproj">
-      <Project>{e7d946dd-84fe-4e60-80a6-a6aec7e40384}</Project>
-      <Name>veracity.BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\veracity.DAL\veracity.DAL.csproj">
       <Project>{22D986D7-30A5-4FB8-926C-7BF70CF78B52}</Project>
       <Name>veracity.DAL</Name>
