@@ -25,6 +25,7 @@ namespace veracity
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //abel1.Text = UserID.ToString();
             EmpTaskStatisticForm f1 = new EmpTaskStatisticForm(UserID);
             f1.ShowDialog();
         }
@@ -39,6 +40,11 @@ namespace veracity
         {
             EmpProjectedSalaryForm f1 = new EmpProjectedSalaryForm();
             f1.ShowDialog();
+        }
+
+        private void EmployeeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

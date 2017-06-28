@@ -73,6 +73,7 @@
             this.Controls.Add(this.BtnEmpTaskStatictic);
             this.Name = "EmployeeForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.ResumeLayout(false);
 
         }

@@ -28,9 +28,15 @@ namespace veracity
 
         private void EmpTaskStatisticForm_Load(object sender, EventArgs e)
         {
-            List<DAL.Entities.Task> lst = EmployeeMethods.GetTaskStatistic(1);
+            List<DAL.Entities.Task> lst = EmployeeMethods.GetTaskStatistic(UserID);
+            string userName = EmployeeMethods.GetUserNameById(UserID);
+            lblEmpName.Text = userName;
             dataGridView1.DataSource = lst;
-            
+            dataGridView1.Columns[0].Name = "Task ID";
+            dataGridView1.Columns[1].Visible = false;
+            dataGridView1.Columns[2].Name = "Task Status";
+            dataGridView1.Columns[3].Name = "Task Description";
+            dataGridView1.Columns[3].Width = 250;
         }
     }
 }

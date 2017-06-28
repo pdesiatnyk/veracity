@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using veracity.DAL.EF;
+using veracity.DAL.Entities;
 
 namespace BLL
 {
@@ -20,6 +21,13 @@ namespace BLL
                   select p).ToList();
             return lst;
 
+        }
+        public static string GetUserNameById(int id)
+        {
+            DataContext db = new DataContext();
+            Employee emp = new Employee();
+            emp = (from p in db.Employees where p.ID_employee == id select p).FirstOrDefault();
+            return emp.Name;
         }
 
     }
