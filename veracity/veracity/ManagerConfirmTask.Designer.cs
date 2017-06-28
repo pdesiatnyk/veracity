@@ -1,4 +1,7 @@
-﻿namespace veracity
+﻿using BLL;
+using System;
+
+namespace veracity
 {
     partial class ManagerConfirmTask
     {
@@ -124,6 +127,8 @@
             this.PerformLayout();
 
         }
+
+       
 
         #endregion
 
